@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(238, 231, 231, 0.993);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.profile-image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+.hi{
+    position: absolute;
+    text-transform: capitalize;
+    
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.dami{
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    left: 40px;
+    top: 155px;
+}
+.arrow-up{
+    font-weight: bolder;
+    font-size: 28px;
+    color: green;
+    position: absolute;
+    left: 120px;
+}
+.i-do{
+    text-align: center;
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+.what{
+    width: 600px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.527);
+    height: 400px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.what p{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.712);
+    text-align: center;
+    margin-top: 50px;
+    line-height: 30px;
+}
+.info{
+    margin-top: 550px;
+    position: relative;
+}
+#skill{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+#skills{
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.534);
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    cursor: pointer;
+}
+#skills ul{
+    margin-left: 200px;
+    margin-right: 200px;
+    list-style-type: none;
+    transition: opacity 1.5s;
+    opacity: 0;
+   
+}
+#skills li{
+    margin-top: 23px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 15px;
+    
+    
+}
+.slider{
+    width: 700px;
+    height: 440px;
+    position: absolute;
+    top: 30px;
+    box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.418) , inset -2px -4px 8px rgba(255, 255, 255, 0.918);
+    transform: translateX(-100%);
+    transition: transform 1s;
+    z-index: 5;
+    background-color: rgba(5, 73, 73, 0.945);
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+.slid{
+    transform: translateX(0);
+}
+.inside{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    line-height: 30px;
+}
+
+.ham div{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 3px;
+    transition: width .5s;
+}
+.ham div:nth-child(2){
+    width: 30px;
+    margin-left: -5px;
+}
+.ham{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3000;
+
+}
+.ham div:hover{
+    width: 25px;
+}
+.go-to{
+    background-color: rgba(3, 46, 29, 0.938);
+    width: 100vw;
+    z-index: 1999;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    transform: translateY(-100%);
+    transition: transform 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.got{
+transform: translateY(0);
+}
+.go-to ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+}
+.go-to li{
+    font-size: 20px;
+    margin: 30px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.project{
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+#projects{
+    position: relative;
+    width: 100vw;
+    margin-top: 102%;
+}
+#projects .mini{
+    position: absolute;
+    top: 40px;
+    border-bottom: 2px solid rgb(180, 228, 7);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    word-spacing: 7px;
+    font-size: 30px;
+    font-family: Courier, monospace;
+    font-weight: bolder;
+    color: rgb(45, 129, 6);
+    
+}
+#projects img{
+    width: 200px;
+    height: 400px;
+}
+#secondpr img{
+    width: 200px;
+    height: 400px;
+}
+.calculator img{
+    width: 200px;
+    height: 400px;
+}
+#projects .homepg{
+    font-size: 15px;
+    font-family:monospace;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+}
+#projects .hme{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 190px;
+    left: 40%;
+    display: flex;
+    overflow:hidden;
+    transition: 2s;
+    transform: translateX(350%);
+}
+#projects .move{
+    transition: transform 1s;
+    display: flex;
+}
+#secondpr .fme{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 190px;
+    left: 40%;
+    display: flex;
+    overflow:hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.calculator .cme{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 230px;
+    left: 40%;
+    display: flex;
+    overflow:hidden;
+    transform: translateX(-350%);
+    transition: transform 2s;
+}
+.ame{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 850px;
+    left: 40%;
+    display: flex;
+    overflow:hidden;
+}
+.calculator .cove{
+    transition: transform 1s;
+    display: flex;
+}
+.fove{
+    transition: transform 1s;
+    display: flex;
+}
+.pleft{
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.fleft{
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.cleft{
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    cursor: pointer;
+    font-size: 30px;
+}
+#projects .hmed{
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#secondpr .fmed{
+    line-height: 30px;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cmed{
+    line-height: 30px;
+    position: absolute;
+    top: 670px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#secondpr{
+    position: absolute;
+        top: 2000px;
+    width: 100vw;
+}
+.formval{
+    color: rgb(45, 129, 6);
+    width: 100%;
+    text-align: center;
+    font-family: Courier, monospace;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.calc{
+    color: rgb(45, 129, 6);
+    width: 100%;
+    text-align: center;
+    font-family: Courier, monospace;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.damycard{
+    position: absolute;
+    top: 400px;
+    left: 40px;
+}
+.damycalc{
+    position: absolute;
+    top: 400px;
+    left: 40px;
+}
+.damyapp{
+    position: absolute;
+    top: 1000px;
+    left: 40px;
+}
+.formdes{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.calcde{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+.appde{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+.calculator{
+    width: 100vw;
+   position: relative;
+    margin-top: 70%;
+}
+.app{
+    width: 100vw;
+    position: relative;
+    margin-top: 600px;
+}
+.app .appdes{
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 7px;
+    font-size: 30px;
+    font-family: Courier, monospace;
+    font-weight: bolder;
+    color: rgb(45, 129, 6);
+}
+.third{
+    position: relative;
+    margin-top: 460%;
+    width: 100vw;
+}
+.other{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: rgb(62, 182, 7);
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 10px;
+}
+.third ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: number;
+    width: 100%;
+    list-style-type: none;
+}
+.third li{
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    
+}
+.third a{
+  margin-top: 40px;
+}
+#about{
+    width: 80vw;
+    height: 100vh;
+    margin-left: 50px;
+   background:rgba(216, 194, 172, 0.404);
+    margin-top: 70px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.733);
+    
+}
+#contact{
+    width: 80vw;
+    height: 100vh;
+    margin-left: 50px;
+   background:linear-gradient(rgba(69, 219, 10, 0.514),rgba(8, 233, 147, 0.452));
+    margin-top: 70px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.733);
+}
+#about p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+}
+#contact p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(7, 7, 7);
+}
+#about h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(7, 7, 7);
+    font-size: 20px;
+}
+
+
+@media(max-width:450px){
+    #about h2{
+        font-size: 14px;
+    }
+    #about p{
+        width: 80%;
+    }
+    .other{
+        width: 80%;
+    }
+    .third li{
+        width: 80%;
+        left: 10px;
+        font-size: 14px;
+    }
+    .third ul{
+        width: 70%;
+        font-size: 14px;
+    }
+    body{
+       overflow-x: hidden;
+    }
+    .profile-image{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+        margin-left: 100px;
+        margin-top: 60px;
+    }
+    .hi{
+        top: 40px;
+        left: 170px;
+        font-size: 15px;
+        
+    }.dami{
+        font-size: 13px;
+        left: 140px;
+        top: 225px;
+    }
+    .arrow-up{
+        font-size: 20px;
+        left: 210px;
+    }
+    .i-do{
+        top: 270px;
+        left: 30px;
+        font-size: 17px;
+    }
+    .what{
+        width: 80vw;
+        height: 550px;
+        top: 320px;
+        left: 170px;
+    }
+    .what p{
+        font-size: 15px;
+        line-height: 30px;
+    }#skill{
+        top: 40px;
+        left: 30px;
+        font-size: 18px;
+    }#skills{
+        width:80vw;
+        height: 500px;
+        top: 70px;
+        left: 170px;
+        cursor: pointer;
+    }
+    #skills ul{
+        margin-left: 100px;
+        margin-right: 100px;
+       
+    }
+    .info{
+        margin-top: 660px;
+        position: relative;
+    }
+    .project{
+        top: 10px;
+        left: 30px;
+        font-size: 20px;
+    }
+    #projects{
+        margin-top: 350%;
+        width: 80vw;
+    }
+    #projects .mini{
+        top: 60px;
+        border-bottom:none;
+        width: 100%;
+        font-size: 20px;
+        color: rgb(45, 129, 6);
+        left: 160px;
+    }
+    #projects .homepg{
+        font-size: 13px;
+        width: 90%;
+        top: 130px;
+        left: 30px;
+    }#projects .hme{
+        width: 200px;
+        height: 300px;
+        top: 330px;
+        left: 60px;
+        display: flex;
+        overflow:hidden;
+    }
+    #projects img{
+        height: 300px;
+    }
+    #secondpr .fme{
+        width: 200px;
+        height: 300px;
+        top: 330px;
+        left: 60px;
+        display: flex;
+        overflow:hidden;
+    }
+    .calculator .cme{
+        width: 200px;
+        height: 300px;
+        top: 450px;
+        left: 60px;
+        display: flex;
+        overflow:hidden;
+    }
+    .ame{
+        width: 200px;
+        height: 300px;
+        top: 1150px;
+        left: 60px;
+        display: flex;
+        overflow:hidden;
+    }
+    #secondpr img{
+        height: 300px;
+    }
+    .calculator img{
+        height: 300px;
+    }
+    .pleft{
+        top: 450px;
+        right: 0px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .cleft{
+        top: 560px;
+        right: 70px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .fleft{
+        top: 450px;
+        right: 60px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    #projects .hmed{
+        top: 680px;
+    }
+    #secondpr .fmed{
+        top: 680px;
+        width: 80%;
+        font-size: 14px;
+    }
+    .cmed{
+        top: 790px;
+        width: 80%;
+        font-size: 14px;
+    }
+    .ham{
+        right: 70px;
+        top: 10px;
+    
+    }
+    .slider{
+        width: 300px;
+        height: 500px;
+        top: 70px;
+    }
+    .inside{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    .damycard{
+        position: absolute;
+        top: 640px;
+        left: 20px;
+    }
+    .damyapp{
+        position: absolute;
+        top: 1480px;
+        left: 20px;
+        width: 80%;
+    }
+    .damycalc{
+        position: absolute;
+        top: 760px;
+        left: 20px;
+    }
+    #secondpr{
+            top: 2650px;
+            width: 100vw;
+    }
+    .formval{
+        font-size: 20px;
+        margin-left: -15px;
+    }
+    .app .appdes{
+        font-size: 20px;
+        left: 15px;
+        width: 80%;
+    }
+    .calc{
+        font-size: 20px;
+        margin-left: -40px;
+        
+    
+    }
+    .formdes{
+        font-size: 13px;
+        width: 80%;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+    .calcde{
+        font-size: 13px;
+        width: 80%;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+    .appde{
+        font-size: 13px;
+        width: 80%;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+    .calculator{
+        margin-top: 240%;
+        
+    }
+    .third{
+        margin-top: 1760%;
+        width: 100vw;
+       
+    }
+}
