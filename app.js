@@ -47,33 +47,6 @@ slider.onclick=()=>{
     slider.classList.remove("slid")
 }
 
-window.onscroll = ()=>{
-    var f = skills.getBoundingClientRect().top
-    if(f <=window.innerHeight/2){
-        skilu.style.cssText = "opacity:1;"
-    }else{
-        skilu.style.cssText = "opacity:0;"
-    }
-    var j = hme.getBoundingClientRect().top
-    if(j <=window.innerHeight/2){
-        hme.style.cssText = "transform:translate(0)"
-    }else{
-        hme.style.cssText = "transform:translate(350%)"
-    }
-    var f = fme.getBoundingClientRect().top
-    if(f <=window.innerHeight/2){
-        fme.style.cssText = "opacity:1"
-    }else{
-        fme.style.cssText = "opacity:0"
-    }
-    var c = cme.getBoundingClientRect().top
-    if(c <=window.innerHeight/2){
-        cme.style.cssText = "transform:translate(0)"
-    }else{
-        cme.style.cssText = "transform:translate(-350%)"
-    }
-    
-}
 
 ham.onclick=()=>{
     got.classList.toggle("got")

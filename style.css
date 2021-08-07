@@ -111,8 +111,6 @@ body{
     margin-left: 200px;
     margin-right: 200px;
     list-style-type: none;
-    transition: opacity 1.5s;
-    opacity: 0;
    
 }
 #skills li{
@@ -265,7 +263,6 @@ transform: translateY(0);
     display: flex;
     overflow:hidden;
     transition: 2s;
-    transform: translateX(350%);
 }
 #projects .move{
     transition: transform 1s;
@@ -279,8 +276,6 @@ transform: translateY(0);
     left: 40%;
     display: flex;
     overflow:hidden;
-    opacity: 0;
-    transition: 2s;
 }
 .calculator .cme{
     position: absolute;
@@ -290,8 +285,6 @@ transform: translateY(0);
     left: 40%;
     display: flex;
     overflow:hidden;
-    transform: translateX(-350%);
-    transition: transform 2s;
 }
 .ame{
     position: absolute;
